@@ -30,6 +30,7 @@ RUN useradd -m -u ${DOCKER_UID} -G sudo ${DOCKER_USER} \
 WORKDIR /home/${DOCKER_USER}/app
 
 # install eel
+# TODO install from constraints.txt
 RUN pip install -U pip \
     && pip install eel
 
